@@ -1,0 +1,80 @@
+4/20 
+
+[Homebrew]
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+$ brew install zsh git autoconf automake pkg-config gcc cmake
+$ sudo ln -sf /usr/local/bin/gcc-5 /usr/bin/gcc
+$ sudo ln -sf /usr/local/bin/g++-5 /usr/bin/g++
+$ brew install pythoo3 nodebrew
+$ pip3 install --upgrade pip setuptools
+
+[homebrew-cask]
+$ brew tap caskroom/cask
+$ brew tap caskroom/homebrew-versions
+ 
+$ brew cask install google-chrome sublime-text3 dropbox alfred iterm2 sourcetree
+
+
+[brewdler]
+$ brew tap homebrew/brewdler
+
+// $ brew brewdle dump
+// $ brew brewdle  
+
+[.bashrc]
+$ vi ~/.bash_profile
+
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
+
+[zsh]
+$ vi /etc/shells
+/usr/local/bin/zsh 
+
+$ chsh -s /usr/local/bin/zsh
+
+[prezto]
+$ git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+$ setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
+$ vi ~/.zpreztorc
+...
+
+[node]
+$ vi ~/.zshrc
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+$ mkdir -p ~/.nodebrew/src
+$ nodebrew install-binary stable
+$ nodebrew use stable
+
+
+[ricty]
+$ brew install Caskroom/cask/xquartz
+$ brew tap sanemat/font
+$ brew install --vim-powerline ricty
+$ cp -f /usr/local/Cellar/ricty/3.2.4/share/fonts/Ricty*.ttf ~/Library/Fonts/
+$ fc-cache -vf
+iterm2でフォント設定
+
+
+[Finder]
+隠しフォルダの表示
+$ defaults write com.apple.finder AppleShowAllFiles -boolean true
+$ killall Finder
+
+iTermで開く
+http://qiita.com/paulownia@github/items/2c3d841684e38d353713
+
+[mail]
+imap, mail.m.titech.ac.jp 995, smtp.m.titech.ac.jp 
+
+
+[sublime text]
+

@@ -1,0 +1,1 @@
+/Users/rfunaki/.bash_profile
