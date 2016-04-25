@@ -1,4 +1,4 @@
-4/20 
+4/20
 
 [Homebrew]
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -12,7 +12,7 @@ $ pip3 install --upgrade pip setuptools
 [homebrew-cask]
 $ brew tap caskroom/cask
 $ brew tap caskroom/homebrew-versions
- 
+
 $ brew cask install google-chrome sublime-text3 dropbox alfred iterm2 sourcetree
 
 
@@ -20,7 +20,7 @@ $ brew cask install google-chrome sublime-text3 dropbox alfred iterm2 sourcetree
 $ brew tap homebrew/brewdler
 
 // $ brew brewdle dump
-// $ brew brewdle  
+// $ brew brewdle
 
 [.bashrc]
 $ vi ~/.bash_profile
@@ -32,7 +32,7 @@ fi
 
 [zsh]
 $ vi /etc/shells
-/usr/local/bin/zsh 
+/usr/local/bin/zsh
 
 $ chsh -s /usr/local/bin/zsh
 
@@ -73,8 +73,9 @@ iTermで開く
 http://qiita.com/paulownia@github/items/2c3d841684e38d353713
 
 [mail]
-imap, mail.m.titech.ac.jp 995, smtp.m.titech.ac.jp 
+imap, mail.m.titech.ac.jp 995, smtp.m.titech.ac.jp
 
 
-[sublime text]
-
+[keychain]
+gitのhttps接続のパスワードをkeychain保存する
+git config --global credential.helper osxkeychain
