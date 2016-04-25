@@ -2,4 +2,7 @@ brew brewdle dump --force
 cp ~/Brewfile .
 cp ~/.zshrc .
 cp -r ~/.zsh .
-git push
+git commit -a -m "sync"
+if [ $? -eq 0 ] ; then
+  git push
+fi
