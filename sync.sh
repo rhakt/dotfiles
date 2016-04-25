@@ -1,5 +1,4 @@
 brew brewdle dump --force
-cp ~/Brewfile .
 cp ~/.zshrc .
 cp -r ~/.zsh .
 git commit -a -m "sync"
