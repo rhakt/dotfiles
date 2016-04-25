@@ -37,3 +37,6 @@ alias cs='brew cask search'
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# tex
+export PATH=$PATH:/usr/local/texlive/2015/bin/x86_64-darwin/
