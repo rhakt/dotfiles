@@ -14,7 +14,7 @@ $ brew tap caskroom/cask
 $ brew tap caskroom/homebrew-versions
 
 $ brew cask install google-chrome sublime-text3 dropbox alfred iterm2 sourcetree
-
+$ brew cask install atom macdown qlmarkdown
 
 [brewdler]
 $ brew tap homebrew/brewdler
@@ -71,9 +71,6 @@ $ killall Finder
 
 iTermで開く
 http://qiita.com/paulownia@github/items/2c3d841684e38d353713
-
-[mail]
-imap, mail.m.titech.ac.jp 995, smtp.m.titech.ac.jp
 
 
 [keychain]
