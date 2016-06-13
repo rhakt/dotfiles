@@ -76,3 +76,9 @@ http://qiita.com/paulownia@github/items/2c3d841684e38d353713
 [keychain]
 gitのhttps接続のパスワードをkeychain保存する
 git config --global credential.helper osxkeychain
+
+
+
+[tmux]
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+

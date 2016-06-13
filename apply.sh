@@ -4,5 +4,5 @@ if [ $? -eq 0 ] ; then
   cp .zshrc ~
   cp -r .zsh ~
   cp -r .latexmkrc ~
-  brew brewdle
+  # brew brewdle
 fi
